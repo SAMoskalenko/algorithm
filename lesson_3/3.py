@@ -9,17 +9,19 @@ for i in range(n):
 
 print(a)
 
-min = 0
+min = a[0]
 min_num = 0
-max = 0
+max = a[0]
 max_num = 0
 
-for i in range(0, len(a)):
+for i in range(n):
     if min > a[i]:
+        min = a[i]
         min_num = i
     if max < a[i]:
+        max = a[i]
         max_num = i
 
 a[min_num], a[max_num] = a[max_num], a[min_num]
 
-print(a)
+print(min, max, a)
