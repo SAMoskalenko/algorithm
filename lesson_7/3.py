@@ -7,13 +7,14 @@
 
 from random import randint
 
-a = [randint(-100, 100) for i in range(int(input('Введите значение ')) * 2 + 1)]
+x = int(input('Введите значение '))
+a = [randint(-100, 100) for i in range(x * 2 + 1)]
 
 print(a)
 
 e = 0
 
-while e <= (len(a) // 2 + 1):
+while e < (x+1):
     min = a[0]
     n = 0
     i = 0
